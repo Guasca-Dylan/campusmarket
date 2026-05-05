@@ -26,16 +26,20 @@ $usuario = getSession('usuario');
                 echo '<span class="rounded-1 bg-info p-2" >&#128100 ' . htmlspecialchars($usuario['nombre']) . "</span>";
             }
             ?>
-            <a href="?page=registro">Registro</a>
             <a href="?page">Inicio </a>
-            <a href="?page=perfil">Perfil</a>
             <a href="?page=productos">Productos</a>
-            <a href="?page=publicar">Publicar</a>
             <?php
             if (isLoggedIn()) {
-                echo '<a href="?page=logout">Logout</a>';
+                ?>
+                <a href="?page=publicar">Publicar</a>
+                <a href="?page=perfil">Perfil</a>
+                <a href="?page=logout">Logout</a>                                                           
+                <?php
             } else {
-                echo '<a href="?page=login">Login</a>';
+                ?>
+                <a href="?page=registro">Registro</a>
+                <a href="?page=login">Login</a>
+                <?php
             }
             ?>
         </nav>

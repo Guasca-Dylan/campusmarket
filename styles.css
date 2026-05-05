@@ -24,6 +24,12 @@ margin-left:20px;
 text-decoration:none;
 }
 
+nav a:hover,nav a:focus{
+border-bottom:1px solid white;
+margin-bottom:-1px;
+text-decoration:none;
+}
+
 .container{
 padding:30px;
 }

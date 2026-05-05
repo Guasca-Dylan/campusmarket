@@ -1,20 +1,27 @@
-<form action="../registro.php" method="POST">
+<div class="container">
 
-    <label>ID Legal</label>
-    <input type="text" name="id_legal" required>
+    <h2>Registrar nuevo usuario</h2>
 
-    <label>Nombres</label>
-    <input type="text" name="nombres" required>
+    <form action="?page=registro" method="POST">
 
-    <label>Apellidos</label>
-    <input type="text" name="apellidos" required>
 
-    <label>Correo</label>
-    <input type="email" name="direccion_electronica" required>
 
-    <label>Contraseña</label>
-    <input type="password" name="clave_acceso" required>
+        <label>ID Legal</label>
+        <input type="text" name="id_legal" required>
 
-    <button type="submit">Registrarse</button>
+        <label>Nombres</label>
+        <input type="text" name="nombres" required>
 
-</form>
+        <label>Apellidos</label>
+        <input type="text" name="apellidos" required>
+
+        <label>Correo</label>
+        <input type="email" name="direccion_electronica" required>
+
+        <label>Contraseña</label>
+        <input type="password" name="clave_acceso" required>
+
+        <button type="submit">Registrarse</button>
+
+    </form>
+</div>
