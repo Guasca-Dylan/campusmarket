@@ -17,6 +17,7 @@ VALUES
 if ($conexion->query($sql)) {
     echo "Registro exitoso 😎";
 } else {
-    echo "Error: " . $conexion->error;
+    $errorInfo = $conexion->errorInfo();
+    echo "Error: " . ($errorInfo[2] ?? 'Error desconocido');
 }
 ?>

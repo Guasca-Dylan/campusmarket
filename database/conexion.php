@@ -1,23 +1,24 @@
 <?php
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "campus_market";
+$host = "127.0.0.1";
+$port = "3306";
+$db   = "campus_market";
+$user = "root";
+$pass = "";
 
 try {
 
     $conexion = new PDO(
-        "mysql:host=$servername;port=3306;dbname=$dbname",
-        $username,
-        $password
+        "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4",
+        $user,
+        $pass
     );
 
-    echo "Conexión exitosa";
+    echo "🔥 CONEXIÓN EXITOSA 🔥";
 
 } catch (PDOException $e) {
 
-    die("Conexión fallida: " . $e->getMessage());
+    echo "ERROR: " . $e->getMessage();
 
 }
 
